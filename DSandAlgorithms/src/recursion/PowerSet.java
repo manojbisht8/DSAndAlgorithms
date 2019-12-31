@@ -7,7 +7,7 @@ public class PowerSet {
 	
 	public static void powerSet(List<Integer> input, int selectedIndex, List<Integer> selectedSoFar) {
 		
-		if(selectedIndex >= input.size()) {
+		if(selectedIndex == input.size()) {
 			selectedSoFar.forEach(n -> {
 				System.out.print(n + " ");
 			});
@@ -21,7 +21,6 @@ public class PowerSet {
 		
 		//don't select current element
 		selectedSoFar.remove(selectedSoFar.size()-1);
-		//selectedSoFar.remove(input.get(selectedIndex));
 		powerSet(input, selectedIndex+1, selectedSoFar);
 	}
 
