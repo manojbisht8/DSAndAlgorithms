@@ -52,7 +52,7 @@ public class BinaryTreeZigZagTraversal {
     			
     			//add delimiter for new level
     			if(nodesQ.size() >0) {
-    			nodesQ.add(null);
+    				nodesQ.add(null);
     			}
     			
     		}
